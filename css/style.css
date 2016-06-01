@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700,300|Yanone+Kaffeesatz);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #80878c;
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #444;
+}
+
+h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background: #5ED8DA;
+  border-color: #53BFC0;
+}
+
+.btn-primary:hover {
+  background: #53BFC0;
+  border-color: #53BFC0;
+}
+
+.cover-main {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center -7em;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.cover-iphone {
+  width: 250px;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading:after {
+  width: 50px;
+  height: 1px;
+  display: block;
+  background: #5ED8DA;
+  content: '';
+  margin: 5px auto 15px;
+}
+
+.newsletter {
+  margin-top: 60px;
+}
+
+.newsletter .driver {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.newsletter input[type="email"] {
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  font-weight: 300;
+}
+
+.newsletter .btn {
+  height: 60px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #6c6c6c;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+footer .row {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+footer h3 {
+  color: #bebebe;
+  margin-top: 0;
+}
+
+footer .footer-links li {
+  margin: 5px 0;
+}
+
+footer .footer-links li a {
+  color: #6c6c6c;
+}
+
+footer .footer-links li a:hover {
+  color: #CCC;
+}
