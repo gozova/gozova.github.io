@@ -81,6 +81,28 @@ p {
   font-size: 18px;
 }
 
+.how-item {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.how-item .fa {
+  font-size: 28px;
+  background: #5ED8DA;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  line-height: 60px;
+}
+
+.how-item .how-title {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+
 footer {
   background-color: #1f1f1f;
   color: #6c6c6c;
@@ -108,4 +130,14 @@ footer .footer-links li a {
 
 footer .footer-links li a:hover {
   color: #CCC;
+}
+
+footer .social .fa {
+  color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
 }
