@@ -1,0 +1,1036 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*Product Name : Silva — Beautiful App HTML Template*/
+/*Author: Kenul Jain*/
+/*Version : 1.0 (Initial Release)*/
+/*File Name : base.css*/
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               Table of Contents                                       */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/* 	0. Universal Styles  	*/
+/* 	1. Typography Styles 	*/
+/* 		1.1 Typography 	*/
+/* 		1.2 Heading 	*/
+/* 	2. Button & Link Styles 	*/
+/* 		2.1 Button Styles 	*/
+/* 		2.2 Link Styles 	*/
+/* 		2.3 Download Button Styles 	*/
+/* 	 3. Container & Spacing Styles 	*/
+/* 		3.1 Container Styles 	*/
+/* 		3.2 Spacing Styles 	*/
+/* 	 4. Helper Styles 	*/
+/* 	 5. Forms Styles 	*/
+/* 		5.1 Subscribe 	*/
+/* 			5.1.1 Single Line 	*/
+/* 		5.2 Transparent 	*/
+/* 		5.3 Outline 	*/
+/* 		5.4 Login Form (Both Simple & Advanced) 	*/
+/* 		5.5 Contact Form 	*/
+/* 	 6. Carousel/Slider Styles (Reviews Section) 	*/
+/* 		6.1 Main Carousel 	*/
+/* 			6.1.1 Navigation Buttons 	*/
+/* 		6.2 Card Style (Without Carousel) 	*/
+/* 		6.3 Clients Style (Below Reviews) 	*/
+/* 	 7. According Styles (FAQ Section) 	*/
+/* 	 8. Mockup Styles 	*/
+/* 		8.1 iPhone 		*/
+/* 		8.2 iPad 		*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               0. Universal Styles                                      */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a, a:active {
+  outline: none;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               1. Typography Styles                                 */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*	1.1 Typography 	*/
+/*===========================================*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: #4f4f4f;
+}
+
+h1 {
+  font-size: 2.647em;
+}
+
+h2 {
+  font-size: 2.118em;
+}
+
+h3 {
+  font-size: 1.765em;
+}
+
+h4 {
+  font-size: 1.529em;
+}
+
+h5 {
+  font-size: 1.294em;
+}
+
+h6 {
+  font-size: 1.118em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2.118em;
+  margin-top: .75em;
+  color: #979797;
+}
+
+b {
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+b.highlight {
+  font-weight: 500;
+  color: #5ED8DA;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.white {
+  color: #ffffff !important;
+}
+
+.blue {
+  color: #5ED8DA !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/*===========================================*/
+/*	1.2 Heading Styles 	*/
+/*===========================================*/
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 2.353em;
+  line-height: 1.25em;
+  letter-spacing: -0.25px;
+  max-width: 30%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.heading.type-1 h6 {
+  font-size: 1.176em;
+  font-weight: 400;
+  color: #979797;
+  margin-bottom: .75em;
+}
+
+.heading.type-1::after {
+  height: 2px;
+  width: 50px;
+  background-color: #5ED8DA;
+  margin: 1.8em auto 0;
+  content: '';
+  display: block;
+}
+
+.heading.type-2 h6 {
+  text-transform: uppercase;
+  color: #5ED8DA;
+  letter-spacing: .6em;
+  font-size: 1.059em;
+  font-weight: 500;
+  margin-bottom: .75em;
+}
+
+.heading.type-2 h5 {
+  color: #979797;
+  max-width: 30%;
+  min-width: 310px;
+  font-size: 1.412em;
+  line-height: 1.6em;
+  margin: .75em auto 0;
+}
+
+.heading.type-2.white h6, .heading.type-2.white h5, .heading.type-2.white h2, .heading.type-2.white h6.blue-cap, .heading.type-1.white h6, .heading.type-1.white h5, .heading.type-1.white h2, .heading.type-1.white h6.blue-cap {
+  color: #ffffff;
+}
+
+.heading.type-2.white:after, .heading.type-1.white:after {
+  background-color: #ffffff;
+}
+
+h5.light {
+  color: #979797;
+  font-size: 1.412em;
+  line-height: 1.6em;
+  margin: .75em auto 0;
+  font-weight: 300;
+}
+
+h1.pop {
+  font-size: 3.3em;
+  line-height: 1.25em;
+}
+
+h1.text-gradient {
+  background: -webkit-linear-gradient(90deg, #40DCC2 0%, #43D4E6 100%);
+  background: -ms-linear-gradient(90deg, #40DCC2 0%, #43D4E6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  color: #5ED8DA;
+}
+
+h3.info {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+h6.blue-cap {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #5ED8DA;
+}
+
+i.large {
+  font-size: 7.375em;
+  color: #4f4f4f;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               2. Button & Link Styles                             */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*	2.1 Button Styles	*/
+/*===========================================*/
+a.button {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #5ED8DA;
+  color: #ffffff;
+  max-width: 11.5em;
+  min-width: 10em;
+  font-size: 1em;
+  letter-spacing: .5px;
+  outline: none;
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 1.5em;
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+  text-decoration: none;
+}
+
+a.button:hover {
+  box-shadow: 0px 0px 60.9px 9.1px rgba(0, 0, 0, 0.1);
+}
+
+a.button.white {
+  color: #4f4f4f !important;
+  background-color: #ffffff;
+}
+
+a.button.center {
+  margin: 0 auto;
+}
+
+a.button.highlight {
+  box-shadow: 0px 0px 60.9px 9.1px rgba(0, 0, 0, 0.1);
+}
+
+/*===========================================*/
+/*	2.2 Link Styles 	*/
+/*===========================================*/
+a.link {
+  color: #979797;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  position: relative;
+  padding: 0 3px;
+  display: inline !important;
+}
+
+a.link:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #5ED8DA;
+  width: 0%;
+  height: 2px;
+  margin-top: .5em;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+a.link:hover {
+  color: #4f4f4f;
+}
+
+a.link:hover:after {
+  width: 100%;
+}
+
+a.link.white {
+  color: #ffffff;
+}
+
+a.link.white:hover {
+  color: #ffffff;
+}
+
+a.link.white:after {
+  background-color: #ffffff;
+}
+
+/*===========================================*/
+/*	2.3 Download Button Styles 	*/
+/*===========================================*/
+.download-cta {
+  color: #979797;
+  display: table;
+  width: 100%;
+}
+
+.download-cta a.download img {
+  width: auto;
+  height: 3.5em;
+}
+
+.download-cta > * {
+  float: left;
+}
+
+.download-cta a.link {
+  margin-top: 1em;
+}
+
+span.or {
+  text-transform: uppercase;
+  padding: 0 1.5em;
+  margin-top: 1.8em;
+  font-size: 11px;
+  display: inline-block;
+  height: inherit;
+  color: #979797;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                     3. Container & Spacing Styles                         */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*	3.1 Container Styles 	*/
+/*===========================================*/
+.container-full {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-medium {
+  width: 78%;
+  margin: 0 auto;
+}
+
+/*===========================================*/
+/*	3.2 Spacing Styles 	*/
+/*===========================================*/
+section {
+  margin-top: 4.206em;
+  margin-bottom: 4.206em;
+  display: inline-block !important;
+  width: 100%;
+}
+
+.inner-space {
+  margin-top: 5em;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               4. Helper Styles                                            */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.m-xlarge-top {
+  margin-top: 9.412em;
+}
+
+.m-xlarge-bottom {
+  margin-bottom: 9.412em;
+}
+
+.m-large-top {
+  margin-top: 6.471em;
+}
+
+.m-large-bottom {
+  margin-bottom: 6.471em;
+}
+
+.m-medium-top {
+  margin-top: 4em;
+}
+
+.m-medium-bottom {
+  margin-bottom: 4em;
+}
+
+.m-small-top {
+  margin-top: 2.941em;
+}
+
+.m-small-bottom {
+  margin-bottom: 2.941em;
+}
+
+.m-xsmall-top {
+  margin-top: 1.75em;
+}
+
+.m-xsmall-bottom {
+  margin-bottom: 1.75em;
+}
+
+.m-top-none {
+  margin-top: 0 !important;
+}
+
+.m-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.m-none {
+  margin: 0 !important;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.p-none {
+  padding: 0 !important;
+}
+
+.p-none-left {
+  padding-left: 0 !important;
+}
+
+.p-none-right {
+  padding-right: 0 !important;
+}
+
+.align-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.align-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.align-left {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.cb {
+  clear: both;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                                               5. Forms                                          */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+form.shadow {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.08);
+  padding: 3em 2em;
+  display: inline-block;
+}
+
+form.box {
+  padding: 3em 2em;
+  display: inline-block;
+}
+
+input, button.primary, textarea {
+  max-width: 25em;
+  background-color: #f8f8f8;
+  outline: none;
+  padding: 0.9em 0 0.9em 1.5em;
+  font-size: 0.941em;
+  color: #4f4f4f;
+  float: left;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  border: 2px solid #f8f8f8;
+}
+
+input:focus, button.primary:focus, textarea:focus {
+  border: 2px solid #5ED8DA;
+}
+
+.checkbox {
+  display: inline-block;
+}
+
+.checkbox input[type="checkbox"] {
+  width: auto;
+  margin-right: 1em;
+  margin-top: .3em !important;
+}
+
+.checkbox label {
+  font-size: 14px;
+  color: #979797;
+}
+
+button.primary {
+  padding-left: 0;
+  text-align: center;
+  display: block;
+  background-color: #5ED8DA;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-weight: 500;
+  margin-top: 2em;
+  border: 2px solid #5ED8DA;
+}
+
+textarea {
+  width: 100% !important;
+  max-width: 100%;
+  min-height: 15em;
+}
+
+/*===========================================*/
+/*	5.1 Subcribe 	*/
+/*===========================================*/
+form.subscribe input, form.subscribe button.primary {
+  width: -webkit-calc(46% - 4px);
+  width: calc(46% - 4px);
+  margin-left: 8%;
+}
+
+form.subscribe input:first-child, form.subscribe button.primary:first-child {
+  margin-left: 0;
+}
+
+/*-------------------------------------------------------------*/
+/*	5.1.1 Single Line 	*/
+/*-------------------------------------------------------------*/
+form.subscribe.inline input, form.subscribe.inline button.primary {
+  width: 30%;
+  margin-left: 3.3333333%;
+}
+
+form.subscribe.inline input:first-child, form.subscribe.inline button.primary:first-child {
+  margin-left: 0;
+}
+
+form.subscribe.inline button.primary {
+  margin-top: 0;
+}
+
+button.primary.center {
+  margin-left: 27% !important;
+}
+
+/*===========================================*/
+/*	5.2 Transparent 	*/
+/*===========================================*/
+form.transparent input, form.transparent button.primary {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  color: #ffffff;
+}
+
+form.transparent input:focus, form.transparent button.primary:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0;
+}
+
+form.transparent button.primary {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+form.transparent button.primary:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+form.transparent ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+form.transparent :-moz-placeholder {
+  color: #ffffff;
+}
+
+form.transparent :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/*===========================================*/
+/*	5.3 Outline 	*/
+/*===========================================*/
+form.outline input, form.outline button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+form.outline button {
+  background-color: #ffffff;
+  color: #5ED8DA;
+}
+
+form.outline ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+form.outline :-moz-placeholder {
+  color: #ffffff;
+}
+
+form.outline :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/*===========================================*/
+/*	5.4 Login Form (Both Simple & Advanced)	*/
+/*===========================================*/
+form.login input, form.login button.primary, form.login .checkbox {
+  width: 100%;
+  margin-left: 0 !important;
+  margin-top: 1.5em;
+}
+
+form.login input:first-child, form.login button.primary:first-child, form.login .checkbox:first-child {
+  margin-top: 0;
+}
+
+form.login button.primary {
+  margin-top: 2em;
+}
+
+form.login span.or {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+button.facebook, button.google {
+  text-transform: none;
+  color: #ffffff;
+  background-color: #3b5998;
+  border-radius: 5em;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  outline: none;
+  border: 0;
+  padding: 0.9em 0 0.9em 1.5em;
+  font-size: 0.941em;
+  width: 100%;
+  margin-top: 2em;
+}
+
+button.facebook i, button.google i {
+  padding-left: .5em;
+  font-size: 1.25em;
+  margin-top: 0;
+  float: none;
+  color: #ffffff;
+}
+
+button.google {
+  background-color: #d34836;
+}
+
+/*===========================================*/
+/*	5.5 Contact Form 	*/
+/*===========================================*/
+form.contact input, form.contact textarea {
+  width: 47%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 1.5em;
+}
+
+form.contact input:nth-child(2n), form.contact textarea:nth-child(2n) {
+  margin-left: 6%;
+}
+
+form.contact button.primary {
+  width: -webkit-calc(46% - 4px);
+  width: calc(46% - 4px);
+}
+
+form.contact textarea {
+  resize: none;
+}
+
+form.contact .success, form.contact .error {
+  display: none;
+  padding-top: 1em;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*       6. Carousel/Slider Styles (Reviews Section)         */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*	6.1 Main Carousel 	*/
+/*===========================================*/
+.owl-carousel .review {
+  border-radius: 2em;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 3.5em 4.25em;
+  text-align: center;
+}
+
+.owl-carousel .review h3.quote {
+  font-size: 2.118em;
+  line-height: 1.25em;
+}
+
+h5.r-name {
+  font-weight: 400;
+  color: #979797;
+  margin: 1.25em 0;
+}
+
+.stars {
+  color: #5ED8DA;
+  font-size: 1.4em;
+}
+
+.stars i {
+  margin: 0 0.125em;
+}
+
+.owl-stage-outer {
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 2em;
+}
+
+/*-------------------------------------------------------------*/
+/*	6.1.1 Navigation Buttons 	*/
+/*-------------------------------------------------------------*/
+.owl-prev, .owl-next {
+  font-size: 6em;
+  color: #979797;
+  position: absolute;
+  top: 50%;
+  margin-top: -6.5%;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  color: #5ED8DA;
+}
+
+.owl-prev {
+  left: -15%;
+}
+
+.owl-next {
+  right: -15%;
+}
+
+/*===========================================*/
+/*	6.2 Card Style (Without Carousel) 	*/
+/*===========================================*/
+.review.card {
+  padding: 2.5em 3.5em 1.5em;
+  box-shadow: 0px 15px 95px 5px rgba(0, 0, 0, 0.06);
+  margin-top: 2em;
+  position: relative;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.review.card h5.r-name {
+  float: left;
+}
+
+.facebook i, .twitter i, .apple i, .g-plus i {
+  margin-top: .6em;
+  font-size: 1.75em;
+  float: right;
+}
+
+.facebook i {
+  color: #3b5998;
+}
+
+.twitter i {
+  color: #4099ff;
+}
+
+.apple i {
+  color: #979797;
+}
+
+.g-plus i {
+  color: #d34836;
+}
+
+/*===========================================*/
+/*	6.3 Clients Style (Below Reviews) 	*/
+/*===========================================*/
+.brand li {
+  list-style: none;
+}
+
+.brand img {
+  display: block;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  max-height: 5em;
+  margin: 0 auto;
+  opacity: .5;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.brand img:hover {
+  opacity: 1;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                  7. According Styles (FAQ Section)                    */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.accordian .question {
+  display: block;
+  position: relative;
+  top: 0;
+  font-size: 1.176em;
+  padding: 1.25em 0 1.25em 2.5em;
+  font-weight: 300;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 60px 0px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  margin-top: 1.25em;
+}
+
+.accordian .question:after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #5ED8DA;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  -webkit-transform-origin: bottom center;
+      -ms-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.accordian .question:hover {
+  box-shadow: 0px 7px 60px 0px rgba(0, 0, 0, 0.08);
+}
+
+.accordian .question:hover:after {
+  height: 100%;
+}
+
+.accordian .question:first-child {
+  margin-top: 0;
+}
+
+.accordian .question.active {
+  box-shadow: 0px 7px 60px 0px rgba(0, 0, 0, 0.08);
+}
+
+.accordian .question.active:after {
+  height: 100%;
+}
+
+.accordian .answer {
+  padding: 1.5em 2.5em;
+  background-color: #ffffff;
+  display: none;
+  box-shadow: 0px 7px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*               			8. Mockup Styles                   		 */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*	8.1 iPhone Styles 	*/
+/*===========================================*/
+.iphone-float img {
+  width: auto;
+  height: 38em;
+  margin-left: 7.5%;
+  display: block;
+}
+
+.iphone-front img {
+  display: block;
+  max-width: 90%;
+  width: auto;
+  max-height: 38em;
+  height: auto;
+  margin: auto;
+}
+
+.iphone-left img, .iphone-right img {
+  max-width: 83%;
+  width: auto;
+  max-height: 48em;
+  height: auto;
+  display: block;
+}
+
+.iphone-left img {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.iphone-right img {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.iphone-hori img {
+  width: 100%;
+  height: auto;
+}
+
+.iphone-hand img {
+  width: 125%;
+  height: auto;
+  margin-left: 7.5%;
+  overflow: hidden;
+}
+
+.iphone-rotate img {
+  max-width: 10%;
+  width: 12em;
+  height: auto;
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+/*===========================================*/
+/*	2.1 iPad 	*/
+/*===========================================*/
+.ipad-rotate img {
+  max-width: 22%;
+  width: 25em;
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.iphone-port {
+  width: 25%;
+  float: left;
+  margin: 0 1.5%;
+}
+
+.ipad-land {
+  width: 36%;
+  float: left;
+}

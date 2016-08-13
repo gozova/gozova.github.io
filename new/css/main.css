@@ -1,0 +1,869 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*Product Name : Silva — Beautiful App HTML Template*/
+/*Author: Kenul Jain*/
+/*Version : 1.0 (Initial Release)*/
+/*File Name : main.css*/
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               Table of Contents                                       */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+/* 	0. Logo Styles  	*/
+/* 	1. Banner Styles 	*/
+/* 		1.1 Scroll-down Button 		*/
+/* 		1.2 Background Image 		*/
+/* 		1.3 Gradient & Overlay	*/
+/* 		1.4 Lightbox Video 		*/
+/* 		1.5 Subscribe Download Form 		*/
+/* 		1.6 App Landing 		*/
+/* 	2. Header Styles 	*/
+/* 		2.1 Navigation 		*/
+/* 		2.2 Responsive Navigation 		*/
+/* 	3. About Styles 	*/
+/* 	4. Features Styles 	*/
+/* 		4.1 Extra Features 		*/
+/* 		4.2 Advanced (Tab Navigation) 		*/
+/* 		4.3 Small Features 		*/
+/* 	5. Screenshots Styles 	*/
+/* 	6. Video Styles 	*/
+/* 		6.1 Card Styles 		*/
+/* 		6.2 Video Button Styles 		*/
+/* 		6.3 Video Full Styles 		*/
+/* 	7. Subscribe Styles 	*/
+/* 	8. Download Styles 	*/
+/* 	9. Footer Styles 	*/
+/* 	10. Coming Soon Page Styles 	*/
+/* 	11. Log In/Sign Up Styles 	*/
+/* 	12. Map Styles 	*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*              	                0. Logo Styles	   			          */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+header {
+  z-index: 1000;
+}
+
+header.top .logo img {
+  width: 90%;
+}
+
+header.top .logo-center img {
+  width: 55%;
+  margin: 0 auto;
+  display: block;
+}
+
+.logo {
+  padding: 0 !important;
+}
+
+#header .logo img {
+  width: 80%;
+}
+
+.app-logo img {
+  width: 12%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-info .logo {
+  width: 90%;
+}
+
+.logo-info .vr {
+  height: 6em;
+  margin: 0 auto;
+  margin-top: -15%;
+  background-color: #979797;
+  width: 2px;
+  opacity: .5;
+}
+
+.logo-info .info p {
+  margin-top: -1%;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               1. Banner Styles                                          */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+#banner {
+  min-height: 30em;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: inherit;
+}
+
+.bg-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding: 4em 0;
+}
+
+.b-space {
+  margin-top: 7%;
+}
+
+.warning {
+  display: none;
+}
+
+/*===========================================*/
+/*	1.1 Scroll-down Button 	*/
+/*===========================================*/
+.scroll-down {
+  color: #979797;
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  bottom: 2em;
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.scroll-down i {
+  font-size: 2em;
+}
+
+.scroll-down:hover {
+  color: #5ED8DA;
+}
+
+.scroll-down.white {
+  color: #ffffff;
+}
+
+.scroll-down.white:hover {
+  color: #ffffff;
+}
+
+/*===========================================*/
+/*	1.2 Background Image	*/
+/*===========================================*/
+.parallax-window {
+  background: transparent;
+  min-height: 30em;
+  height: inherit;
+}
+
+#banner .iphone-right img {
+  margin-top: -15%;
+  max-height: 40em;
+}
+
+/*===========================================*/
+/*	1.3 Gradient & Overlay 	*/
+/*===========================================*/
+#banner .gradient:after {
+  width: 100%;
+  height: inherit;
+  content: '';
+  display: block;
+  background-image: -webkit-linear-gradient(90deg, #0e66c0 0%, #1979db 25%, #5ED8DA 100%);
+  background-image: -ms-linear-gradient(90deg, #0e66c0 0%, #1979db 25%, #5ED8DA 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .95;
+}
+
+.overlay:after {
+  width: 100%;
+  height: inherit;
+  content: '';
+  display: block;
+  background-color: #111111;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*===========================================*/
+/*	1.4 Lightbox Video 	*/
+/*===========================================*/
+#banner .video-button a {
+  top: 35%;
+}
+
+/*===========================================*/
+/*	1.5 Subscribe Download Form 	*/
+/*===========================================*/
+form.download {
+  margin-top: 1em;
+}
+
+form.download input {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 0.9em 0 0.9em 1.5em;
+  outline: none;
+  width: 65%;
+  color: #ffffff;
+}
+
+form.download input, form.download button {
+  float: left;
+  border: 2px solid #ffffff;
+}
+
+form.download button {
+  background-color: #ffffff;
+  padding: .9em;
+  width: 20%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #4f4f4f;
+}
+
+form.download ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+form.download :-moz-placeholder {
+  color: #ffffff;
+}
+
+form.download :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/*===========================================*/
+/*	1.6 App Landing 	*/
+/*===========================================*/
+.app .b-space {
+  margin-top: 5%;
+}
+
+.app h1.pop {
+  padding: 0 1.25em;
+}
+
+.iframe {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               2. Header Styles                                          */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+#header {
+  padding: 1.25em 0;
+  background-color: #ffffff;
+  box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+/*===========================================*/
+/*	2.1 Navigation 	*/
+/*===========================================*/
+nav.main {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+nav.main ul {
+  display: block;
+  margin-top: .70em;
+  text-align: right;
+}
+
+nav.main li {
+  display: inline;
+  list-style: none;
+  padding-right: 3em;
+}
+
+nav.main a {
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: 400;
+  color: #979797;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+nav.main a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+  width: 0%;
+  margin-left: 50%;
+  height: 2px;
+  background-color: #5ED8DA;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+nav.main a:hover {
+  color: #5ED8DA;
+}
+
+nav.main a:hover:after {
+  width: 130%;
+  left: -15%;
+  margin-left: 0;
+}
+
+/*===========================================*/
+/*	2.2 Responsive Navigation 	*/
+/*===========================================*/
+span.nav-button, span.close-button {
+  font-size: 1.5em;
+  color: #979797;
+  text-align: right;
+  display: none;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               3. About Styles                                             */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.about {
+  text-align: center;
+}
+
+.about h4 {
+  margin-top: 1em;
+}
+
+#about .content {
+  margin-top: 7em;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                               4. Features Styles                                        */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.features {
+  text-align: center;
+}
+
+/*===========================================*/
+/*	4.1 Extra Features 	*/
+/*===========================================*/
+#extra-feature-1, #extra-feature-2 {
+  margin: 4.1175em 0;
+}
+
+#extra-feature-1 .content, #extra-feature-2 .content {
+  margin-top: 7em;
+}
+
+#extra-feature-1 {
+  margin-top: 3.529em;
+}
+
+#extra-feature-1.type-2, #extra-feature-2.type-2 {
+  display: inline-block;
+}
+
+#extra-feature-1.type-2 .content, #extra-feature-2.type-2 .content {
+  padding: 6%;
+  margin: 0;
+}
+
+#extra-feature-1.type-2 .image, #extra-feature-2.type-2 .image {
+  height: 45em;
+}
+
+#extra-feature-2.type-2.m-top-none {
+  margin-top: -5px !important;
+}
+
+/*===========================================*/
+/*	4.2 Advanced (Tab Navigation) 	*/
+/*===========================================*/
+.f-heading {
+  padding-top: 1.1em;
+  padding-bottom: 1.7em;
+  text-align: center;
+  border-radius: 1.5em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.f-heading i {
+  color: #979797;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.f-heading h4 {
+  margin-top: .8em;
+}
+
+.f-heading:hover i {
+  color: #5ED8DA;
+}
+
+.f-heading.active {
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.08);
+}
+
+.f-heading.active i {
+  color: #5ED8DA;
+}
+
+.f-detail {
+  display: none;
+}
+
+/*===========================================*/
+/*	4.3 Small Features 	*/
+/*===========================================*/
+.features-small .feature {
+  display: block;
+  margin-top: 1.1em;
+}
+
+.features-small .feature:hover i {
+  color: #5ED8DA;
+}
+
+.features-small i {
+  float: left;
+  font-size: 3em;
+  padding-right: .75em;
+  color: #979797;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.features-small h4 {
+  line-height: 2em;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                             5. Screenshots Styles                                 */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.screenshots {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+
+.app-screen {
+  float: left;
+  width: 20%;
+  padding-right: 1em;
+  opacity: .4;
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+
+.app-screen:hover {
+  opacity: 1;
+}
+
+.app-screen.active {
+  opacity: 1;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                                      6. Video Styles                                       */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*===========================================*/
+/*	6.1 Card Styles  	*/
+/*===========================================*/
+.video.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 0;
+  padding-top: 55%;
+}
+
+.video.card img {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  margin-left: -50%;
+}
+
+.video.card.overlay:after {
+  opacity: .2;
+  height: 100%;
+}
+
+.card {
+  border-radius: 2em;
+  overflow: hidden;
+  box-shadow: 0px 15px 95px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*===========================================*/
+/*	6.2 Video Button Styles  	*/
+/*===========================================*/
+.video-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.video-button a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.875em;
+  margin-left: -1.875em;
+  width: 3.75em;
+  height: 3.75em;
+  line-height: 3.8em;
+  text-align: center;
+  font-size: 1.75em;
+  color: #5ED8DA;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 5em;
+  -webkit-transition: all 0.6s cubic-bezier(0.26, 0.79, 0.63, 1.4);
+          transition: all 0.6s cubic-bezier(0.26, 0.79, 0.63, 1.4);
+}
+
+.video-button a:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.video-button i {
+  margin-left: 2px;
+}
+
+.video-button.large a {
+  width: 4.25em;
+  height: 4.25em;
+  line-height: 4.35em;
+  font-size: 2em;
+  margin-top: -2.125em;
+  margin-left: -2.125em;
+}
+
+.video-button.large i {
+  margin-left: 5px;
+}
+
+/*===========================================*/
+/*	6.3 Video Full Styles  	*/
+/*===========================================*/
+#video.large {
+  height: 50em;
+}
+
+#video.large .video-button a {
+  top: 60%;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                                      7. Subscribe Styles                              */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+#subscribe.image {
+  height: 34em;
+}
+
+.notice {
+  color: #979797;
+  clear: both;
+  display: inline-block;
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+}
+
+.notice i {
+  font-size: 1.25em;
+}
+
+.notice span {
+  font-size: 0.9em;
+  padding-left: 2%;
+}
+
+#subscribe.blue {
+  background-color: #5ED8DA;
+  padding: 4em 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#subscribe.blue:after {
+  content: '';
+  position: absolute;
+  top: -3em;
+  left: 0;
+  height: 3em;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.message {
+  display: block;
+  color: #4f4f4f;
+  width: 60%;
+  max-width: 100%;
+  padding-top: .5em;
+  margin: 0 auto;
+}
+
+.message i {
+  font-size: 1.25em;
+  padding-right: 5px;
+}
+
+.success i {
+  color: green;
+}
+
+.error i {
+  color: red;
+}
+
+.message.white h6, .message.white i {
+  color: #ffffff !important;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                                      8. Download Styles                              */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+#download.small {
+  height: 36em;
+}
+
+#download.large {
+  height: 50em;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                                      9. Footer Styles                                     */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+footer {
+  padding: 3em 0;
+}
+
+footer .logo {
+  width: 30%;
+  display: block;
+}
+
+footer p.copy {
+  font-size: 0.824em;
+}
+
+.social {
+  margin-top: 1em;
+}
+
+.social li {
+  list-style: none;
+  display: inline;
+  margin-right: 3.75em;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.social ul {
+  text-align: right;
+}
+
+.social a, .social .scroll-top a {
+  font-size: 1.75em;
+  color: #979797;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.social a:hover, .social .scroll-top a:hover {
+  color: #5ED8DA;
+}
+
+.scroll-top {
+  margin-top: .5em;
+}
+
+.scroll-top a {
+  font-size: 2em;
+  color: #979797;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  text-align: right;
+  display: block;
+  width: auto;
+}
+
+.scroll-top a:hover {
+  color: #5ED8DA;
+}
+
+/*===========================================*/
+/*	9.1 Default (Small) Styles  	*/
+/*===========================================*/
+footer.default {
+  background-color: #ffffff;
+}
+
+/*===========================================*/
+/*	9.2 Default (Large) Styles  	*/
+/*===========================================*/
+footer.type-2 {
+  padding: 4em 0;
+}
+
+footer.type-2 .social {
+  margin-top: 2.941em;
+  width: 100%;
+  clear: both;
+  display: inline-block;
+}
+
+footer.type-2 .social ul {
+  text-align: center;
+}
+
+/*===========================================*/
+/*	9.3 Transparent Styles  	*/
+/*===========================================*/
+footer.transparent .social a, footer.transparent .scroll-top a {
+  color: #ffffff !important;
+}
+
+footer.transparent .social a:hover, footer.transparent .scroll-top a:hover {
+  color: #ffffff;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                        10. Coming Soon Page Styles                     */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.coming {
+  overflow: hidden;
+}
+
+.coming .b-space {
+  margin-top: 0%;
+}
+
+.coming.image .b-space {
+  margin-top: 7%;
+}
+
+.coming.type-3 {
+  overflow: visible;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                            11. Log In/Sign Up Styles                          */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+.login-page .form {
+  width: 25em;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -14%;
+  margin-left: -12.5em;
+}
+
+.login-page .form.adv {
+  margin-top: -16%;
+}
+
+.login-page .bg-image {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  z-index: -1;
+}
+
+.login-page.color {
+  background-color: #5ED8DA;
+}
+
+.login-page.gradient:after {
+  z-index: -1;
+}
+
+.login-page.bg {
+  overflow: hidden;
+}
+
+.p-name {
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+}
+
+/*-------------------------------------------------------------*/
+/*===========================================*/
+/*                                       12. Map Styles                                      */
+/*===========================================*/
+/*-------------------------------------------------------------*/
+#map-canvas {
+  width: 100%;
+  height: 25em;
+}
