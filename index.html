@@ -1,166 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    	#mc_embed_signup{
-        clear:left;
-        font:14px Helvetica,Arial,sans-serif;
+<head>
+	<meta charset="UTF-8">
+	<title>Gozova - Landing Page</title>
 
-      }
-      #mc_embed_signup .button {
-          clear: both;
-          background-color: #5ED8DA;
-          border-radius: 4px;
-          transition: all 0.23s ease-in-out 0s;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 15px;
-          font-weight: normal;
-          height: 32px;
-          line-height: 32px;
-          margin: 0 5px 10px 0;
-          padding: 0 22px;
-          text-align: center;
-          text-decoration: none;
-          vertical-align: top;
-          white-space: nowrap;
-          width: auto;
-      }
-      #mc_embed_signup .mc-field-group input {
-          display: block;
-          width: 100%;
-          padding: 8px 0;
-          text-indent: 2%;
-          color: #000000;
-      }
+	<!-- Linking Stylesheets Starts -->
 
+	<!-- Silva Project Stylesheets -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- If JavaScript is disabled then load an external stylesheet -->
+	<noscript>
+		<link rel="stylesheet" href="css/no-js.css">
+	</noscript>
 
-    	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-    	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <section class="container-fluid cover-main text-center">
-      <div class="col-md-4 hidden-xs hidden-sm">
-        <img src="img/iphone.png" class="cover-iphone" alt="iPhone">
-      </div>
-      <div class="col-md-8">
-        <img src="img/logo_main.png" alt="" />
-        <h1>Moving doesn't have to be a pain</h1>
-        <p class="lead">
-          Don't stress about renting a moving van or a pickup truck when we can handle that for you. Just schedule a driver to pickup your things when you need them out and then you can focus on packing and loading when the moving day comes.
-        </p>
-        <!-- Begin MailChimp Signup Form -->
+	<!-- Bootstarp Framwork (This is a customised version, more info in docs) -->
+	<link rel="stylesheet" href="css/vendor/bootstrap.css">
 
-<div id="mc_embed_signup">
-<form action="//gozova.us11.list-manage.com/subscribe/post?u=8b9f5723a7f96e71fbc93dded&amp;id=5a999e21dc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
+	<!-- Other Libraries Stylesheets -->
+	<link rel="stylesheet" href="css/vendor/animate.css">
+	<link rel="stylesheet" href="css/vendor/owl.carousel.css">
+	<link rel="stylesheet" href="css/vendor/magnific-popup.css">
 
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address </label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group input-group">
-    <ul><li><input type="checkbox" value="1" name="group[11985][1]" id="mce-group[11985]-11985-0"><label for="mce-group[11985]-11985-0">  I want to be a driver</label></li>
-</ul>
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8b9f5723a7f96e71fbc93dded_5a999e21dc" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
+	<!-- Google Fonts -->
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,500' type='text/css'>
 
-<!--End mc_embed_signup-->
-      </div>
-    </section>
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/stroke-icons.css">
 
-    <div class="container">
+	<!-- Linking Stylesheets End -->
 
-      <!-- How it works -->
-      <section class="row">
-        <div class="col-md-12">
-          <div class="section-heading">
-            <h2>So, how does it work?</h2>
-          </div>
-          <p>
-            Simply open up the app, create an account or login with an existing one. Then you can easily request a truck driver immediately or schedule one for a specific time. Pick your pickup location and your destination and make sure you have someone to help you load your stuff. We will dispatch the driver in time to make sure they are on time.
-          </p>
-        </div>
-      </section>
+	<!-- Meta data for SEO -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Moving doesnt have to be a pain">
+	<meta name="keywords" content="Gozova, moving, trucks, pickup, app, mobile, ios">
+	<meta name="author" content="Gozova">
+
+	<!-- Linking Favicons -->
+
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Social Sharing Start -->
+
+	<!-- Facebook & Google Plus -->
+	<!-- <meta property="og:type" content="website">
+	<meta property="og:image" content="http://silva.studio.kenulja.in/demo/img-custom/i-1.png">
+	<meta property="og:title" content="Home Page - 1 + Background Image | Silva — Beautiful App Template">
+	<meta property="og:description" content="Silva is beautifully curated app template. With visually appealing and aesthetic design Silva is created with special attention to all those little details.">
+	<meta property="og:url" content="http://silva.studio.kenulja.in/demo/index-1.html"> -->
 
 
-      <section class="row">
-        <div class="how-item col-sm-3 col-xs-6">
-          <i class="fa fa-mobile"></i>
-          <div class="how-title">Login or create a Gozova account</div>
-        </div>
-        <div class="how-item col-sm-3 col-xs-6">
-          <i class="fa fa-map-marker"></i>
-          <div class="how-title">Set your pickup and dropoff location</div>
-        </div>
-        <div class="how-item col-sm-3 col-xs-6">
-          <i class="fa fa-truck"></i>
-          <div class="how-title">Load your items in the truck once it comes</div>
-        </div>
-        <div class="how-item col-sm-3 col-xs-6">
-          <i class="fa fa-credit-card-alt"></i>
-          <div class="how-title">Checkout when your items get there safely</div>
-        </div>
-      </section>
+	<!-- Twitter -->
+	<!-- <meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="http://silva.studio.kenulja.in/demo/index-1.html" />
+	<meta name="twitter:title" content="Home Page - 1 + Background Image | Silva — Beautiful App Template" />
+	<meta name="twitter:description" content="Silva is beautifully curated app template. With visually appealing and aesthetic design Silva is created with special attention to all those little details." />
+	<meta name="twitter:image" content="http://silva.studio.kenulja.in/demo/img-custom/i-1.png" />
+	<meta name="twitter:creator" value="@twitter_user"> -->
 
-      <!-- What its like -->
-      <section class="row">
-        <div class="col-sm-6">
-          <div class="section-heading">
-            <h2>For users</h2>
-          </div>
-          <p>
-            It's easy for users to sign up and to start using the service. We pride ourselves in customer service and satisfaction. Everyone wants a good deal and good service which is what we aim to provide. Simply select your start and end points, describe your items, and pick a date or request instantly. The driver will accept the request and you'll be notified when they are on the way. The driver isn't required to help load or unload the truck but if they do help, you might want to thank them with a positive review and maybe even a tip!
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <div class="section-heading">
-            <h2>For drivers</h2>
-          </div>
-          <p>
-            Drivers are treated like customers at Gozova. Every driver is crucial to our business and we want to make sure you're taken care of. Unlike other on-demand logistics services, we don't take a large percentage of the fare. Gozova wants to be a truck driver's friend and we made the process simple to become part of the team.
-          </p>
-        </div>
-      </section>
-    </div>
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-md-9">
-          <ul class="list-unstyled footer-links">
-  					<li><a href="#">About us</a></li>
-  					<li><a href="#">Team</a></li>
-  					<li><a href="#">Blog</a></li>
-  					<li><a href="#">Contact</a></li>
-  				</ul>
-        </div>
-        <div class="col-md-3">
-          <h3>Share the love</h3>
-          <p>Share the awesome news to your friends &amp; family</p>
-          <ul class="list-inline social">
-            <li><a href="#"><i class="fa fa-facebook" style="background-color: #3b5998"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" style="background-color: #4099FF"></i></a></li>
-            <li><a href="#"><i class="fa fa-pied-piper" style="background-color: #228b22"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 20px">
-        ©2016 Gozova LLC. All Rights Reserved
-      </div>
-    </footer>
-  </body>
+	<!-- Social Sharing End -->
+
+</head>
+<body>
+
+	<!-- ===========================================
+		Warning  (If JS is disabled)
+	===========================================-->
+
+	<div class="warning">
+		<p class="white">Hi there! Sorry for interrupting but we have detected that you are browsing with JavaScript disabled. So we would like to warn you that some of the features might not work as expected. In order to turn it on back follow the instructions <a href="http://enable-javascript.com/" class="link white">here</a></p>
+	</div>
+
+	<!-- ===========================================
+		Banner Section Start
+	===========================================-->
+
+	<section id="banner" class="m-none">
+
+		<!-- Banner Start -->
+		<!-- Want to change image or add gradient, check docs! -->
+		<div class="bg image overlay" id="auto-height">
+			<!-- Main Background Image -->
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/man-1.jpg"></div>
+			<!-- If JS is disabled below image will load -->
+			<noscript>
+				<div class="bg-image">
+					<img src="img/man-1.jpg" alt="Banner Background Image Here">
+				</div>
+			</noscript>
+
+			<!-- Banner Content Start -->
+			<div class="bg-content">
+				<!-- Banner Header Start -->
+				<header class="top">
+					<div class="container-full clearfix">
+						<!-- Banner Logo Start -->
+						<div class="col-xs-3 col-sm-2 col-lg-1 logo p-none">
+							<a href=""><img src="img/logo-white.png" alt="App Logo here"></a>
+						</div>
+						<!-- Banner Logo End -->
+						<!-- Banner Download Button Start -->
+						<div class="col-xs-5 col-xs-offset-4 col-sm-offset-8 col-lg-offset-9 col-sm-2 p-none">
+							<a href="#subscribe" class="button white align-right">Get notified</a>
+						</div>
+						<!-- Banner Download Button End -->
+					</div>
+				</header>
+				<!-- Banner Header End -->
+				<!-- Banner Content Start -->
+				<div class="container b-space">
+
+					<!-- iPhone Mockup Start -->
+					<div class="col-sm-5 iphone-float">
+						<img src="img/gozova-iphone-1.png" alt="iPhone App Mockup Here">
+					</div>
+					<!-- iPhone Mockup End -->
+
+					<!-- Content Start -->
+					<div class="col-xs-12 col-sm-offset-1 col-sm-6 m-small-top">
+						<h1 class="pop white">Moving doesn't have to be a pain</h1>
+						<h5 class="light white">
+							Not everyone can fit a new Refridgerator or TV into their car.
+							Gozova lets you call for an instant pickup or schedule it for later.
+						</h5>
+
+						<!-- Banner Call-To-Actions Start -->
+						<div class="download-cta m-xsmall-top">
+							<!-- Main Download Button Here -->
+							<a href="#" class="download"><img src="img/apple-download@2x.png" alt="App Store Download Button"></a>
+							<span class="or white">or</span>
+							<a href="#about" class="link white">Learn more</a>
+						</div>
+						<!-- Banner Call-To-Actions End -->
+					</div>
+					<!-- Content End -->
+
+				</div>
+				<!-- Banner Content End -->
+				<!-- Scroll-Down Button Start -->
+				<a href="#about" class="scroll-down white">
+					<i class="fa fa-angle-double-down"></i>
+				</a>
+				<!-- Scroll-Down Button End -->
+			</div>
+			<!-- Banner Content End -->
+
+		</div>
+		<!-- Banner End -->
+
+	</section>
+
+	<!-- ===========================================
+		Banner Section End
+	===========================================-->
+
+	<!-- ===========================================
+		Main Header Section Start
+	===========================================-->
+
+	<header id="header" class="sticky">
+		<div class="container-full clearfix">
+
+			<!-- Main Logo Start -->
+			<div class="col-xs-3 col-sm-2 col-lg-1 logo p-none">
+				<a href=""><img src="img/logo-blue.png" alt="Main App Logo here"></a>
+			</div>
+			<!-- Main Logo End -->
+
+			<!-- Main Navigation Start -->
+			<nav class="main col-sm-8 col-lg-9">
+				<ul>
+					<li><a href="#banner">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#screenshots">Screens</a></li>
+				</ul>
+			</nav>
+			<!-- Main Navigation End -->
+
+			<!-- Main Download Button Start -->
+			<div class="col-sm-2 p-none download-button">
+				<a href="#subscribe" class="button align-right">Get notified</a>
+			</div>
+			<!-- Main Download Button End -->
+
+		</div>
+	</header>
+
+	<!-- ===========================================
+		Header Section End
+	===========================================-->
+
+	<!-- ===========================================
+		About Section Start
+	===========================================-->
+
+	<section id="about" class="m-xlarge-top">
+
+		<!-- Section Heading Start -->
+		<div class="heading type-1">
+			<h6>About</h6>
+			<h2>What is Gozova?</h2>
+		</div>
+		<!-- Section Heading End -->
+
+		<!-- About Start -->
+		<div class="about-section">
+			<div class="container clearfix">
+				<p>
+					Simply open up the app, create an account or login with an existing one. Then you can easily request a truck driver immediately or schedule one for a specific time. Pick your pickup location and your destination and make sure you have someone to help you load your stuff. We will dispatch the driver in time to make sure they are on time.
+				</p>
+				<p>
+					It's easy for users to sign up and to start using the service. We pride ourselves in customer service and satisfaction. Everyone wants a good deal and good service which is what we aim to provide. Simply select your start and end points, describe your items, and pick a date or request instantly. The driver will accept the request and you'll be notified when they are on the way. The driver isn't required to help load or unload the truck but if they do help, you might want to thank them with a positive review and maybe even a tip!
+				</p>
+			</div>
+		</div>
+		<!-- About End -->
+
+	</section>
+
+	<!-- ===========================================
+		About Section End
+	===========================================-->
+
+	<!-- ===========================================
+		Features Section Start
+	===========================================-->
+
+	<section id="features">
+
+		<!-- Section Heading Start -->
+		<div class="heading type-1">
+			<h6>Feature</h6>
+			<h2>Why use Gozova?</h2>
+		</div>
+		<!-- Section Heading End -->
+
+		<!-- Features Content Start -->
+		<div class="inner-space">
+			<div class="container clearfix">
+
+				<!-- Features 1 & 2 Start -->
+				<div class="col-xs-12 col-sm-4 m-medium-top">
+					<!-- Feature 1 Start -->
+					<div class="features col-xs-12 m-small-top m-xsmall-bottom p-none">
+						<h6 class="blue-cap">Instant Pickup</h6>
+						<p>
+							In a hurry? Request an instant pickup so that a driver will be
+							on their way in minutes.
+						</p>
+					</div>
+					<!-- Feature 1 End -->
+					<!-- Feature 2 Start -->
+					<div class="features col-xs-12 m-small-top m-xsmall-bottom p-none">
+						<h6 class="blue-cap">Scheduled Pickup</h6>
+						<p>
+							Plan on shopping? Tell us what you want to move and when and a
+							driver will be there.
+						</p>
+					</div>
+					<!-- Feature 2 End -->
+				</div>
+				<!-- Features 1 & 2 End -->
+
+				<!-- iPhone Image Start -->
+				<div class="col-xs-12 col-sm-4 iphone-front">
+					<img src="img/gozova-iphone-1.png" alt="iPhone Image Here">
+				</div>
+				<!-- iPhone Image End -->
+
+				<!-- Features 3 & 4 Start -->
+				<div class="col-xs-12 col-sm-4 m-medium-top">
+					<!-- Feature 3 Start -->
+					<div class="features col-xs-12 m-small-top m-xsmall-bottom p-none">
+						<h6 class="blue-cap">Friendly Drivers</h6>
+						<p>
+							We personaly screen each of our drivers to make sure they are a great
+							fit to drive for Gozova.
+						</p>
+					</div>
+					<!-- Feature 3 End -->
+					<!-- Feature 4 Start -->
+					<div class="features col-xs-12 m-small-top m-xsmall-bottom p-none">
+						<h6 class="blue-cap">Great pricing</h6>
+						<p>
+							No minimum fee and it doesnt cost an arm and a leg just to move
+							a few miles away.
+						</p>
+					</div>
+					<!-- Feature 4 End -->
+				</div>
+				<!-- Features 3 & 4 End -->
+
+				<!-- App Info Here -->
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 m-xsmall-top">
+					<h3 class="info">
+						Moving shouldn't be expensive or a pain.
+					</h3>
+				</div>
+
+			</div>
+		</div>
+		<!-- Features Content End -->
+
+	</section>
+
+	<!-- ===========================================
+		Features Section End
+	===========================================-->
+
+	<!-- ===========================================
+		Extra Feature 1 Section Start
+	===========================================-->
+
+	<section id="extra-feature-1">
+		<div class="container clearfix">
+
+			<!-- iPhone Image Start -->
+			<div class="col-sm-4 iphone-left">
+				<img src="img/gozova-iphone-2.png" alt="iPhone Image Here">
+			</div>
+			<!-- iPhone Image End -->
+
+			<div class="col-sm-offset-1 col-sm-7 col-md-offset-2 col-md-6 content">
+				<!-- Heading -->
+				<h1 class="pop text-gradient">Interested in being a driver?</h1>
+				<h5 class="light">Have a truck and a little spare time?</h5>
+
+				<p class="m-xsmall-top">
+					Gozova is almost ready to start hiring drivers. Subscribe to our
+					email list to know when we're ready to get started
+				</p>
+				<p>
+					Drivers are treated like customers at Gozova. Every driver is crucial to our business and we want to make sure you're taken care of. Unlike other on-demand logistics services, we don't take a large percentage of the fare. Gozova wants to be a truck driver's friend and we made the process simple to become part of the team.
+				</p>
+				<!-- Download Button -->
+				<a href="#subscribe" class="button m-small-top">Get Notified</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ===========================================
+		Extra Feature 1 Section End
+	===========================================-->
+
+	<!-- ===========================================
+		Screenshots Section Start
+	===========================================-->
+
+	<section id="screenshots">
+
+		<!-- Section Heading Start -->
+		<div class="heading type-1">
+			<h6>Screenshots</h6>
+			<h2>Take a look at the screenshots for a better glimpse</h2>
+		</div>
+		<!-- Section Heading End -->
+
+		<div class="inner-space">
+			<div class="container-medium">
+				<div class="screenshots">
+
+					<!-- App Screens 1 Start -->
+					<div class="app-screen">
+						<a href="img/app-screen-1.png"><img src="img/app-screen-1.png" alt="Your App Screen Here"></a>
+					</div>
+					<!-- App Screens 1 End -->
+
+					<!-- App Screens 2 Start -->
+					<div class="app-screen">
+						<a href="img/app-screen-2.png"><img src="img/app-screen-2.png" alt="Your App Screen Here"></a>
+					</div>
+					<!-- App Screens 2 End -->
+
+					<!-- App Screens 3 Start -->
+					<div class="app-screen active">
+						<a href="img/app-screen-3.png"><img src="img/app-screen-3.png" alt="Your App Screen Here"></a>
+					</div>
+					<!-- App Screens 3 End -->
+
+					<!-- App Screens 4 Start -->
+					<div class="app-screen">
+						<a href="img/app-screen-4.png"><img src="img/app-screen-4.png" alt="Your App Screen Here"></a>
+					</div>
+					<!-- App Screens 4 End -->
+
+					<!-- App Screens 5 Start -->
+					<div class="app-screen">
+						<a href="img/app-screen-5.png"><img src="img/app-screen-5.png" alt="Your App Screen Here"></a>
+					</div>
+					<!-- App Screens 5 End -->
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- ===========================================
+		Screenshots Section End
+	===========================================-->
+
+	<!-- ===========================================
+		Subscribe Section Start
+	===========================================-->
+
+	<section id="subscribe" class="blue m-none">
+		<div class="container clearfix">
+			<!-- Successful / Error Messages -->
+			<div class="cb message center" id="mailchimp-message">
+				<h6 class="success white"></h6>
+				<h6 class="error white"></h6>
+			</div>
+
+			<!-- Subscribe Form Start -->
+			<form id="mailchimp" class="subscribe inline outline m-xsmall-top col-xs-12 center" style="margin-bottom: 10px">
+				<!-- Name Input -->
+				<input type="text" class="name" name="NAME" placeholder="Name *">
+				<!-- Email Input -->
+				<input type="email" class="Email" name="EMAIL" placeholder="Email *">
+				<!-- Subscribe Button -->
+				<button class="primary">Subscribe</button>
+			</form>
+			<!-- Subscribe Form End -->
+			<div style="margin-left: 15px;">
+				<label class="white" style="padding-left: 10px">
+					<input type="checkbox" id="driver">
+					 Interested in becoming a driver?
+				</label>
+			</div>
+			<div class="m-xsmall-top notice white">
+				<i class="pe-7s-lock"></i>
+				<span class="italic">We won’t share your email with anyone</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===========================================
+		Subscribe Section End
+	===========================================-->
+
+	<!-- ===========================================
+		Footer Section Start
+	===========================================-->
+
+	<footer class="default">
+		<div class="container-full clearfix">
+
+			<!-- Logo & Copyright Start -->
+			<div class="col-lg-3 col-sm-4">
+				<!-- Logo -->
+				<a href="" class="logo"><img src="img/logo-blue.png" alt="Your Logo Here"></a>
+				<!-- Copyright -->
+				<p class="copy">© Copyright Gozova LLC 2016. All Rights Reserved</p>
+			</div>
+			<!-- Logo & Copyright End -->
+
+			<!-- Social Links Start -->
+			<div class="social col-sm-7">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+				</ul>
+			</div>
+			<!-- Social Links End -->
+
+			<!-- Scroll top Button Start -->
+			<div class="col-xs-offset-5 col-xs-1 col-sm-1 col-sm-offset-0 scroll-top">
+				<a href="#banner"><i class="fa fa-angle-double-up"></i></a>
+			</div>
+			<!-- Scroll top Button End -->
+
+		</div>
+	</footer>
+
+	<!-- ===========================================
+		Footer Section End
+	===========================================-->
+
+<script src="js/vendor/jquery-2.1.3.min.js"></script>
+<script src="js/vendor/FitText.min.js"></script>
+<script src="js/vendor/parallax.min.js"></script>
+<script src="js/vendor/jquery.sticky.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/retina.min.js"></script>
+<script src="js/vendor/magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mailchimp.js"></script>
+
+</body>
 </html>
