@@ -1,12 +1,12 @@
 (function($) {
 
-  function mailchimpCallback(resp) {
-  	if (resp.result === 'success') {
-  		$('h6.success').html('<i class="pe-7s-check"></i>' + resp.msg).fadeIn(1000);
+  function mailchimpCallback(error, response) {
+  	if (!error) {
+  		$('h6.success').html('<i class="pe-7s-check"></i>' + response).fadeIn(1000);
   		$('h6.error').fadeOut(500);
   	}
-  	else if (resp.result === 'error') {
-  		$('h6.error').html('<i class="pe-7s-close-circle"></i>' + resp.msg).fadeIn(1000);
+  	else {
+  		$('h6.error').html('<i class="pe-7s-close-circle"></i>' + response).fadeIn(1000);
   	}
   }
 
@@ -14,14 +14,21 @@
     e.preventDefault();
 
     var driver = $('#driver').is(":checked");
-    var id = driver ? "a952eecaf3" : "db31656b2f";
+    var data = $('#mailchimp').serializeArray();
 
     $.ajax({
-        url: 'http://gozova.us11.list-manage.com/subscribe/post-json?u=8b9f5723a7f96e71fbc93dded&c=?&id=' + id,
-        data: $('#mailchimp').serialize(),
-        dataType: 'jsonp',
+        method: 'POST',
+        url: 'https://gozova-temp-backend.herokuapp.com/email/subscribe',
+        data: {
+          email: data[1].value,
+          name: data[0].value,
+          driver: driver
+        },
         success: function (data) {
-           mailchimpCallback(data);
+           mailchimpCallback(false, 'Welcome to Gozova! We\'ll keep you notified.');
+        },
+        error: function(data) {
+          mailchimpCallback(true, data.responseJSON.error);
         }
     });
   });
