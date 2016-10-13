@@ -877,3 +877,10 @@ footer.transparent .social a:hover, footer.transparent .scroll-top a:hover {
 .faq_header {
 	font-weight: bold;
 }
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em
+}
