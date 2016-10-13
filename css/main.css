@@ -884,3 +884,8 @@ footer.transparent .social a:hover, footer.transparent .scroll-top a:hover {
   margin-right: auto;
   width: 20em
 }
+
+.center.banner {
+  margin-left: auto;
+  margin-right: auto;
+}
