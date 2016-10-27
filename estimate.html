@@ -69,6 +69,7 @@
 	<meta name="twitter:creator" value="@twitter_user"> -->
 
 	<!-- Social Sharing End -->
+	<link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
@@ -98,9 +99,6 @@
 			<nav class="main col-sm-8 col-lg-9">
 				<ul>
 					<li><a href="/index.html">Home</a></li>
-					<li><a href="#users">User FAQ</a></li>
-					<li><a href="#drivers">Driver FAQ</a></li>
-					<li><a href="/driver.html">Drivers</a></li>
 					<li><a href="/faq.html">FAQ</a></li>
 				</ul>
 			</nav>
@@ -108,7 +106,7 @@
 
 			<!-- Main Download Button Start -->
 			<div class="col-sm-2 p-none download-button">
-				<a href="#subscribe" class="button align-right">Get notified</a>
+				<a href="driver.html" class="button align-right">Drive with us</a>
 			</div>
 			<!-- Main Download Button End -->
 
@@ -123,165 +121,40 @@
 	FAQ Section Start
 	===========================================-->
 
-	<section id="faq" class="m-xlarge-top">
+	<section class="m-large-top">
 
 		<!-- Section Heading Start -->
 		<div class="heading type-1">
-			<h6>Frequently Asked Questions</h6>
-			<h2>Hopefully you'll find an answer to your question here</h2>
+			<h6>Price Estimator</h6>
+			<h2>Find out how much a pickup will cost</h2>
 		</div>
 		<!-- Section Heading End -->
 
-		<!-- About Start -->
-		<div class="about-section">
-			<div class="container clearfix">
-				<div class="m-medium-top">
-					<div id="users">
+		<div class="container clearfix">
+			<div class="form col-xs-12 col-sm-offset-1 col-sm-10">
+				<form style="width: 100%" class="shadow contact">
 
-
-						<h2 class="faq_header">For Users</h2>
-						<br>
-						<h3 class="faq">
-							Why don’t drivers load/unload items?
-						</h3>
-						<p>
-							This is totally up to the driver, we are trying to save you as much money as possible and by us offering this service will save you a bunch.
-						</p>
-						<hr>
-						<h3 class="faq">
-							What will happen in case of weather change?
-						</h3>
-						<p>
-							Unfortunately we can’t predict the weather, we do have insurance and a claim can be filed which will be reviewed by one of our team members.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Can I ride with the driver?
-						</h3>
-						<p>
-							We are against customers riding with drivers as this is the driver's personal space.
-						</p>
-						<hr>
-						<h3 class="faq">
-							What if the driver steals my items?
-						</h3>
-						<p>
-							All our drivers are screened, we also have insurance on file as well as all the information about the driver. The haul should be safe and secure and that is our main job.
-						</p>
-						<hr>
-						<h3 class="faq">
-							What happens if the driver is late/doesn’t show up?
-						</h3>
-						<p>
-							It is the driver's responsibility to notify you of delays or issues, if anything does arise we will make sure to send another driver your way and offer some sort of discount to satisfy your Gozova experience.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Can we tip the driver?
-						</h3>
-						<p>
-							Yes! At the end of your haul you will be able to tip the driver based on service he/she has provided.
-						</p>
-						<hr>
-						<h3 class="faq">
-							How will we be able to know who the driver/truck is?
-						</h3>
-						<p>
-							After booking your load we will show you 2-3 pictures of the truck so you can see what it looks like, as well as each truck will be marked with a GOZOVA magnet for recognition.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Is my payment safe?
-						</h3>
-						<p>
-							All payments are processed through a secure payment processing system, if there should be any problems feel free to call us and we will look to resolve the problem immediately.
-						</p>
-						<hr>
+					<div id="estimate" style="display: none;" class="estimate-results">
+						<h2 id="estimatePrice">???</h2>
+						<p id="estimateLocation"></p>
+						<small>This price is an estimate and can change due to traffic or unexpected situations</small>
 					</div>
-					<div id="drivers">
-
-						<h2 class="faq_header">For Drivers</h2>
-						<br>
-						<h3 class="faq">
-							Is there a minimum age to drive for GOZOVA?
-						</h3>
-						<p>
-							Yes, the minimum age is 21.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Do we have to have insurance?
-						</h3>
-						<p>
-							Gozova requires each driver to have at least liability insurance with the insuarnce showing the drivers name as insured motorist.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Does the year of my truck matter?
-						</h3>
-						<p>
-							Yes, we only employ drivers with the age of the truck being 2005 or newer.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Will i have to do any drug tests?
-						</h3>
-						<p>
-							We run a unique background check on all our drivers trying to  maintain safety for all our customers.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Will i need any additional items?
-						</h3>
-						<p>
-							We will send you a list of things that you should have to maximize your earning potential.
-						</p>
-						<hr>
-						<h3 class="faq">
-							When will we get paid?
-						</h3>
-						<p>
-							Our HR service will disburse a  payment into your bank account every 2 weeks.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Are we required to lift any items?
-						</h3>
-						<p>
-							We do not require you to  but it would increase your chances in getting a better tip as well as a better rating/review.
-						</p>
-						<hr>
-						<h3 class="faq">
-							What if I get injured?
-						</h3>
-						<p>
-							We are NOT liable for any injuries as mentioned above, you are not required to load/unload any items.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Is GOZOVA for 18 wheeler drivers?
-						</h3>
-						<p>
-							We are not a trucking company and are not in the business of employing drivers for large hauls with 18 wheelers.
-						</p>
-						<hr>
-						<h3 class="faq">
-							Do I have to pay for my own gas?
-						</h3>
-						<p>
-							Yes, but our algorithm will compensate you for gasoline used in the fare payment.
-						</p>
-						<hr>
+					
+					<div class="form-group">
+						<h3>Start Address</h3>
+						<input type="text" class="form-control" id="startLocation">
 					</div>
 
-					<h4>For any other questions feel free to email us at <a href="mailto:hello@gozova.co">hello@gozova.co</a> and we will respond in no more than 24 hours.</h4>
+					<h4 style="margin: 95px 0 15px" class="text-center">to</h4>
 
-				</div>
+					<div class="form-group">
+						<h3>End Address</h3>
+						<input type="text" class="form-control" id="endLocation">
+					</div>
+
+				</form>
 			</div>
 		</div>
-		<!-- About End -->
-
-
 
 	</section>
 
@@ -290,45 +163,6 @@
 	FAQ Section End
 	===========================================-->
 
-
-	<!-- ===========================================
-	Subscribe Section Start
-	===========================================-->
-
-	<section id="subscribe" class="blue m-none">
-		<div class="container clearfix">
-			<!-- Successful / Error Messages -->
-			<div class="cb message center" id="mailchimp-message">
-				<h6 class="success white"></h6>
-				<h6 class="error white"></h6>
-			</div>
-
-			<!-- Subscribe Form Start -->
-			<form id="mailchimp" class="subscribe inline outline m-xsmall-top col-xs-12 center" style="margin-bottom: 10px">
-				<!-- Name Input -->
-				<input type="text" class="name" name="NAME" placeholder="Name *">
-				<!-- Email Input -->
-				<input type="email" class="Email" name="EMAIL" placeholder="Email *">
-				<!-- Subscribe Button -->
-				<button class="primary">Subscribe</button>
-			</form>
-			<!-- Subscribe Form End -->
-			<div style="margin-left: 15px;">
-				<label class="white" style="padding-left: 10px">
-					<input type="checkbox" id="driver">
-					Interested in becoming a driver?
-				</label>
-			</div>
-			<div class="m-xsmall-top notice white">
-				<i class="pe-7s-lock"></i>
-				<span class="italic">We won’t share your email with anyone</span>
-			</div>
-		</div>
-	</section>
-
-	<!-- ===========================================
-	Subscribe Section End
-	===========================================-->
 
 	<!-- ===========================================
 	Footer Section Start
@@ -392,6 +226,83 @@
 	ga('send', 'pageview');
 
 	</script>
+
+
+
+	<script>
+		var startAutocomplete, endAutocomplete;
+		var locations = {};
+
+		function initAutocomplete() {
+			startAutocomplete = new google.maps.places.Autocomplete(
+				$('#startLocation')[0],
+				{types: ['geocode']}
+			);
+			
+			endAutocomplete = new google.maps.places.Autocomplete(
+				$('#endLocation')[0],
+				{types: ['geocode']}
+			);
+			
+			startAutocomplete.addListener('place_changed', startAddressPicked);
+			endAutocomplete.addListener('place_changed', endAddressPicked);
+		}
+
+		function startAddressPicked() {
+			startSet = true;
+			addressPicked('start', startAutocomplete);
+		}
+
+		function endAddressPicked() {
+			endSet = true;
+			addressPicked('end', endAutocomplete);
+		}
+
+		function addressPicked(locKey, autocomplete) {
+			var place = autocomplete.getPlace();
+			var loc = place.geometry.location;
+			locations[locKey] = {
+				lat: loc.lat(),
+				lng: loc.lng(),
+				address: place.formatted_address
+			}
+			
+			if(locations.start && locations.end) findPrice();
+		}
+
+		function findPrice() {
+			$.get(
+				'https://api-gozova.herokuapp.com/v1/public/estimate',
+				{
+					start_latitude: locations.start.lat,
+					start_longitude: locations.start.lng,
+					end_latitude: locations.end.lat,
+					end_longitude: locations.end.lng,
+				},
+				updatePrice
+			);
+		}
+
+		function updatePrice(data) {
+			console.log(data);
+			var upper = data.upper / 100;
+			var lower = data.lower / 100;
+
+			$('#estimatePrice').html('$' + lower + ' - $' + upper);
+			$('#estimateLocation').html(
+				'<strong>' +
+				locations.start.address +
+				'</strong><br />to<br /><strong>' +
+				locations.end.address +
+				'</strong>'
+			)
+
+			$('#estimate').fadeIn();
+		}
+		</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Ex2YWXns-_YkH13MbhKm__2tk9IiMCM
+&libraries=places&callback=initAutocomplete"
+        async defer></script>
 
 </body>
 </html>

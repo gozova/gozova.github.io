@@ -1,0 +1,40 @@
+.btn-white {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #333;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-white:hover {
+  background: transparent;
+  color: #fff;
+}
+
+form.contact input {
+  width: 100%;
+}
+
+form.contact input:nth-child(2n) {
+  margin-left: 0;
+}
+
+.estimate-results {
+  text-align: center;
+  background: #64D8D9;
+  padding: 15px;
+  color: #fdfdfd;
+  margin-bottom: 15px;
+}
+
+.estimate-results p {
+  color: #fff;
+}
+
+.estimate-results h2 {
+  color: #fff;
+  font-size: 2.8em;
+}
