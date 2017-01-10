@@ -38,3 +38,17 @@ form.contact input:nth-child(2n) {
   color: #fff;
   font-size: 2.8em;
 }
+
+.full-button {
+  width: 100%;
+  padding: 12px;
+  background: #5ED8DA;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.button-sub {
+  background: #6d7d7d;
+}
