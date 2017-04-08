@@ -8,9 +8,23 @@
   <body>
     redirecting...<br />
     If the page does not load in a couple of seconds, 
-    <a href="https://itunes.apple.com/us/app/gozova-a-truck-when-you-need-it/id1111883424">click here</a>
+    <br />
+    <a href="https://itunes.apple.com/us/app/gozova-a-truck-when-you-need-it/id1111883424">click here if you have an iPhone</a>
+    <br />
+    <a href="https://play.google.com/store/apps/details?id=com.gozova">click here if you have an Android</a>
+    <script ></script>
+    <script src="js/mobile-detect.min.js"></script>
     <script>
-      window.location = "https://itunes.apple.com/us/app/gozova-a-truck-when-you-need-it/id1111883424";
+      var md = new MobileDetect(window.navigator.userAgent);
+      console.log('it is ', md.os());
+      if(md.os() === 'AndroidOS') {
+        window.location = "https://play.google.com/store/apps/details?id=com.gozova"
+      } else if (md.os() === 'iOS') {
+        window.location = "https://itunes.apple.com/us/app/gozova-a-truck-when-you-need-it/id1111883424";
+      } else {
+        console.log('NONE');
+      }
+      //window.location = "https://itunes.apple.com/us/app/gozova-a-truck-when-you-need-it/id1111883424";
     </script>
   </body>
 </html>
